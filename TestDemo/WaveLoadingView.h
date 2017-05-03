@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  WaveLoadingView.h
 //  TestDemo
 //
 //  Created by 王恒求 on 2016/2/21.
@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface WaveLoadingView : UIView
 
-@property (strong, nonatomic) UIWindow *window;
++ (instancetype)loadingView;
 
+- (void)startLoading;
+
+- (void)stopLoading;
 
 @end
-
